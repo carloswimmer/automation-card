@@ -33,6 +33,24 @@ export const useEditorStore = create<EditorState>((set) => ({
         ],
       },
     },
+    {
+      id: "node-2",
+      x: 100,
+      y: 100,
+      data: {
+        id: "node-2",
+        title: "Fim",
+        description: "Fim da automação",
+        fields: [
+          {
+            id: "field-2",
+            name: "field-2",
+            label: "Field 2",
+            value: "Value 2",
+          },
+        ],
+      },
+    },
   ],
   updateNodePosition: (id, x, y) =>
     set((state) => ({
